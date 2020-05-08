@@ -63,12 +63,23 @@
                     </ul> -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
           <div class="container">
-            <a class="navbar-brand w3-xxxlarge" href="{% url 'home' %}" style="font-family: 'PT Serif', serif"><b>Vipin's Blog</b></a><!-- <span>A blogger site </span> -->
+            <a class="navbar-brand w3-xxxlarge" href="{% url 'home' %}" style="font-family: -apple-system"><b>Vipin's Blog</b></a><!-- <span>A blogger site </span> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainMenu">
-                    {% if user.is_authenticated %}
+                <ul class="navbar-nav ml-auto float-right" >
+                        <li class="nav-item text-black ">
+                            <a class="nav-link text-black font-weight-bold" href="#">About</a>
+                        </li>
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="#">Policy</a>
+                        </li>
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="#">Contact</a>
+                        </li>
+                    </ul>
+                {% if user.is_authenticated %}
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle w3-hover" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Welcome </span><strong>
