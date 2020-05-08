@@ -86,10 +86,12 @@
                       {{ user.username }}</strong>&nbsp; <i class="fa fa-user-circle-o" style="font-size: 24px"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
-                      <a class="dropdown-item w3-hover" href="{% url 'my_account' %}">My account</a>
-                      <a class="dropdown-item w3-hover" href="{% url 'password_change' %}">Change password</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item w3-hover" href="{% url 'logout' %}">Log out</a>
+                        <a href="{% url 'new_post' post.pk %}" class="dropdown-item w3-hover">New Post</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item w3-hover" href="{% url 'my_account' %}">My account</a>
+                        <a class="dropdown-item w3-hover" href="{% url 'password_change' %}">Change password</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item w3-hover" href="{% url 'logout' %}">Log out</a>
                     </div>
                   </li>
                 </ul>
