@@ -1,0 +1,12 @@
+.navbar-brand {
+    
+    font-family: 'Fira Code', monospace;
+  }
+
+  #link:hover{
+  	/*font-size: 125%;*/
+  	background:rgb(102, 153, 153);
+  	color:rgb(255, 255, 255);
+  	text-decoration: none;
+
+  }
